@@ -1,8 +1,8 @@
 package com.example.demo.service;
 
+import com.example.demo.anotation.PostProxy;
 import com.example.demo.anotation.Profiling;
 import com.example.demo.model.Invoice;
-import com.example.demo.service.ServiceTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -28,5 +28,9 @@ public class Service implements ServiceTest {
         } else {
             return invoice;
         }
+    }
+    @PostProxy
+    public void contextListener(){
+        System.out.println("******************** Listener Refresh ***********************");
     }
 }
