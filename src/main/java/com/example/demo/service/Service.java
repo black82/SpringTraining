@@ -30,6 +30,7 @@ public class Service implements ServiceTest {
         }
     }
     @PostProxy
+    @Override
     public void contextListener(){
         System.out.println("******************** Listener Refresh ***********************");
     }

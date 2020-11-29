@@ -7,4 +7,6 @@ import org.springframework.stereotype.Service;
 
 public interface ServiceTest {
     Invoice getInvoice(String typeInvoice);
+
+    public void contextListener();
 }
